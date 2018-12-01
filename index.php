@@ -4,6 +4,7 @@ include_once('inc/include.php');
 <!DOCTYPE html>
 <html>
 <head>
+	<link href="pointblank.ico" rel="icon" type="image/x-icon" />
 	 <link href="https://getbootstrap.com/docs/4.1/examples/sticky-footer-navbar/sticky-footer-navbar.css" rel="stylesheet">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/github-fork-ribbon-css/0.2.2/gh-fork-ribbon.min.css" />
 <style type="text/css">
