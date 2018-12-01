@@ -1,3 +1,6 @@
+<?php 
+include_once('inc/include.php');
+?>
 <!DOCTYPE html>
 <html>
 <style type="text/css">
@@ -14,6 +17,15 @@
     border: 1px solid #fff;
     border-radius: 4px;
 }
+
+	.grD {
+		grid-column-gap: 0;
+	}
+
+	.nowrap {
+  white-space: nowrap ;
+}
+
 </style>
 <body>
 	<br>
@@ -40,19 +52,59 @@
 
 <br/><br/>
 -->
+<?php 
+
+$cPlayer = $connec->prepare('SELECT player_id FROM accounts');
+$cPlayer->execute();
+$countPlayer = $cPlayer->rowCount();
+
+$cPlayerOnline = $connec->prepare('SELECT player_id FROM accounts WHERE online = true');
+$cPlayerOnline->execute();
+$countPlayerOnline = $cPlayerOnline->rowCount();
+
+
+function stest() {
+if(fsockopen("pbth.un4ckn0wl3z.xyz",39190))
+{
+print '<font color="green" style="color: green;">online</font>';
+}
+else
+{
+print '<font color="red" style="color: red;">offline</font>';
+}
+}
+
+ ?>
+
+<div  align="right" >
+<h5>Server status: <?php @@stest() ?>
+          &nbsp;&nbsp;&nbsp;
+ผู้เล่นออนไลน์
+          <font color='green' style="color: red;"><?php echo number_format($countPlayerOnline + 0); ?> / 100</font>
+        </h5>
+       
+		
+ 
+</div>
 <hr>
   <div align="right">
+
   <a href="#c"><button type="button" class="btn  btn-info">ปลี่ยนสีชื่อ</button></a>
 <a href="#r"><button type="button" class="btn  btn-danger">เปลี่ยนยศ</button></a>
 <a href="#n"><button type="button" class="btn  btn-warning">เปลี่ยชื่อ</button></a>
 </div>
-<hr>
+
+
+  	<hr>
 <form action="/insert.php" method="POST">
   INPUT USERNAME HERE:<br>
  <div class="col-xs-4">
     <input class="form-control" name="token" type="text" placeholder="username ต้องมี 13 ตัวอักษรขึ้นไป" required>
   </div>
   <input class="btn btn-success" type="submit" value="Submit">
+<div class="row">
+  <div class="col-sm-6">
+
 
 </form> 
 
@@ -104,6 +156,16 @@
 	- ของฟรี เซิฟลื่น<br/>
 	- ขอยศจาก GM ได้<br/>
 </p>
+  </div>
+  <div class="col-sm-6" align="justify">
+  	<b>PointBlank Free4All | Download, Update patch and Login.</b>
+  	<div align="right">
+	<video controls="true"   width="640" height="385" >
+    <source src="vasdwfwdaqwfqg.mp4" type="video/mp4" />
+</video>
+</div>
+  </div>
+</div>
 
 <hr>
 <div id="c">
