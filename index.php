@@ -3,6 +3,8 @@ include_once('inc/include.php');
 ?>
 <!DOCTYPE html>
 <html>
+<head>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/github-fork-ribbon-css/0.2.2/gh-fork-ribbon.min.css" />
 <style type="text/css">
 	.xsx {
     display: block;
@@ -27,7 +29,9 @@ include_once('inc/include.php');
 }
 
 </style>
+</head>
 <body>
+	<a class="github-fork-ribbon" href="https://github.com/haxtivitiez/PointBlankUtilsWeb" data-ribbon="Fork me on GitHub" title="Fork me on GitHub">Fork me on GitHub</a>
 	<br>
 <div class="container">
 
