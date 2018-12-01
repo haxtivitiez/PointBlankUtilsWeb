@@ -4,6 +4,7 @@ include_once('inc/include.php');
 <!DOCTYPE html>
 <html>
 <head>
+	 <link href="https://getbootstrap.com/docs/4.1/examples/sticky-footer-navbar/sticky-footer-navbar.css" rel="stylesheet">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/github-fork-ribbon-css/0.2.2/gh-fork-ribbon.min.css" />
 <style type="text/css">
 	.xsx {
@@ -27,6 +28,8 @@ include_once('inc/include.php');
 	.nowrap {
   white-space: nowrap ;
 }
+
+
 
 </style>
 </head>
@@ -269,5 +272,12 @@ print '<font color="red" style="color: red;">offline</font>';
 <!-- Latest compiled and minified JavaScript -->
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 
+    <footer class="footer">
+      <div class="container" >
+        <span class="text-muted">Cool stuff and designed by <a href="https://www.facebook.com/un4ckn0wl3z" target="_blank">@un4ckn0wl3z</a></span>
+      </div>
+    </footer>
 </body>
+
+
 </html>
